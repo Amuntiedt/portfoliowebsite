@@ -1,8 +1,20 @@
+body {
+margin: 0;
+}
 .header {
 padding: 80px;
 text-align: center;
 background: #00A86B;
-color: white:
+background-image: url("/home/amelia/Desktop/website/assets/images/websitebanner.png");
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.banner-container {
+width: 1000px;
+background: #f1f1f1;
+border-radius: 25px;
 }
 .header h1 {
 font-size: 40px;
@@ -54,6 +66,7 @@ padding: 20px;
 }
 
 .text-container-education {
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -66,6 +79,7 @@ padding: 20px;
 }
 
 .text-container-research{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -78,6 +92,7 @@ padding: 20px;
 }
 
 .text-container-professional{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -90,6 +105,7 @@ padding: 20px;
 }
 
 .text-container-teaching {
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -102,6 +118,7 @@ padding: 20px;
 }
 
 .text-container-presentations{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -114,6 +131,7 @@ padding: 20px;
 }
 
 .text-container-publications{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -126,6 +144,7 @@ padding: 20px;
 }
 
 .text-container-service{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -142,6 +161,7 @@ padding: 20px;
     margin-bottom: 10px;
 }
 .text-container-skills{
+	text-align: left;
     margin-left: 30px;
 }
 .text-container-membership h3{
@@ -151,6 +171,7 @@ padding: 20px;
     margin-bottom: 10px;
 }
 .text-container-membership{
+	text-align: left;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
