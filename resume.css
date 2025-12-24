@@ -4,7 +4,7 @@ margin: 0;
 .header {
 padding: 80px;
 text-align: center;
-background: #00A86B;
+background-color: #89CFF0;
 background-image: url("/home/amelia/Desktop/website/assets/images/websitebanner.png");
 color: black;
 display: flex;
@@ -12,7 +12,7 @@ justify-content: center;
 align-items: center;
 }
 .banner-container {
-width: 1000px;
+padding: 20px;
 background: #f1f1f1;
 border-radius: 25px;
 }
@@ -56,6 +56,8 @@ padding: 20 px;
 flex: 70%;
 background-color: white;
 padding: 20px;
+display: flex;
+flex-wrap: wrap;
 }
 
 .text-container-education h3 {
