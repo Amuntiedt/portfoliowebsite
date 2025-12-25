@@ -1,10 +1,11 @@
 body {
 margin: 0;
+background: #e6e6e6;
 }
 .header {
 padding: 80px;
 text-align: center;
-background: #00A86B;
+background: #7B9669;
 background-image: url("/home/amelia/Desktop/website/assets/images/websitebanner.png");
 color: black;
 display: flex;
@@ -13,7 +14,7 @@ align-items: center;
 }
 .banner-container {
 width: 1000px;
-background: #f1f1f1;
+background: #e6e6e6;
 border-radius: 25px;
 }
 .header h1 {
@@ -37,7 +38,7 @@ text-decoration: none;
 float: right; /*Right-aligned link, floats a link to the right*/
 }
 .navbar a:hover {
-background-color: #ddd;
+background-color: #BAC8b1;
 color: black;
 }
 .grid-container {
@@ -77,11 +78,15 @@ height: 100%;
 backface-visibility:hidden;
 }
 .flip-card-front {
-background-color: #bbb;
+background-color: #6c8480;
 color: black;
+border: 1px solid #404e3b;
+}
+.flip-card-front h1 {
+color: white;
 }
 .flip-card-back {
-background-color: dodgerblue;
+background-color: #6c8480;
 color: white;
 transform: rotateY(180deg);
 }

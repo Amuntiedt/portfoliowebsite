@@ -1,10 +1,11 @@
 body {
 margin: 0;
+background: #e6e6e6;
 }
 .header {
 padding: 80px;
 text-align: center;
-background: #00A86B;
+background: #7B9669;
 background-image: url("/home/amelia/Desktop/website/assets/images/websitebanner.png");
 color: black;
 display: flex;
@@ -37,7 +38,7 @@ text-decoration: none;
 float: right; /*Right-aligned link, floats a link to the right*/
 }
 .navbar a:hover {
-background-color: #ddd;
+background-color: #BAC8b1;
 color: black;
 }
 * { /*why is this only an asterisk*/
@@ -61,7 +62,7 @@ padding: 20px;
     }
 .main{
 flex: 70%;
-background-color: white;
+background-color: #e6e6e6;
 padding: 20px;
 }
 @media screen and (max-width: 700px) {
