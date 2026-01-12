@@ -43,7 +43,7 @@ color: black;
 * { /*why is this only an asterisk*/
 box-sizing: border-box;
 }
-.row {
+.main {
 display: flex;
 flex-wrap: wrap;
 }
