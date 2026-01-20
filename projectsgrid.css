@@ -90,6 +90,13 @@ background-color: #6c8480;
 color: white;
 transform: rotateY(180deg);
 }
+.flip-card-back p{
+text-align: center;
+  margin-top: 70px;  
+  max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
 .image-container {
 padding: 20px;
 }
@@ -108,14 +115,16 @@ flex-wrap: wrap;
 	text-align: center;
 }
 .text-container {
-  margin-left:20px;
+  margin-left:30px;
+  margin-right: 30px;
   margin-top: 70px;  
   max-width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
 }
 .text-container-2 {
-  margin-left:20px;
+  margin-left:30px;
+  margin-right: 30px;
   margin-top: 70px;  
   max-width: 100%;
     box-sizing: border-box;
