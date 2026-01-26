@@ -2,21 +2,14 @@
 <html lang="en">
 <head>
 <title>Amelia Untiedt</title>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="contact.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	}
-	</style>
-	</head>
-	<body>
+
 	
 	<div class="header">
 		<div class="banner-container">
 		<h1>Contact</h1>
-		<p>Please contact me, preferably with a job offer</p>
 		</div>
 	</div>
 	<div class="navbar">
@@ -26,10 +19,22 @@ body {
 	<a href="contact.html">Contact</a>
 	</div>
 	
-	<div class="row">
-	<div class="side">I don't know what to put here</div>
-	<div class="main">I don't know what to put here either</div>
-	</div>
+<body>
+ <div class="contact-container">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-col"> 
+    <div class="contact-title">
+      <h2>Get in touch</h2>
+      <hr>
+    </div>
+    <input type="hidden" name="access_key" value="5619ad00-5c25-470a-a3ce-d99d423b9524">
+    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+ </div>
+  
+</body>
 	
 	<div class="footer">
 	<h2>footer</h2>

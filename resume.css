@@ -5,7 +5,7 @@ background: #e6e6e6;
 .header {
 padding: 80px;
 text-align: center;
-background-color: #7B9669;
+background: #7B9669;
 background-image: url("/home/amelia/Desktop/website/assets/images/websitebanner.png");
 color: black;
 display: flex;
@@ -13,7 +13,7 @@ justify-content: center;
 align-items: center;
 }
 .banner-container {
-padding: 20px;
+width: 1000px;
 background: #e6e6e6;
 border-radius: 25px;
 }
@@ -44,21 +44,10 @@ color: black;
 * { /*why is this only an asterisk*/
 box-sizing: border-box;
 }
-.row {
-display: flex;
-flex-wrap: wrap;
-}
-.side {
-flex: 30%;
-background-color: #f1f1f1;
-padding: 20 px;
-}
+
 .main{
-flex: 70%;
 background-color: #e6e6e6;
 padding: 20px;
-display: flex;
-flex-wrap: wrap;
 }
 
 .text-container-education h3 {
