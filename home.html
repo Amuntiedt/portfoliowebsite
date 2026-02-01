@@ -16,11 +16,36 @@
 		</div>
 	
 	<div class="navbar">
+	<a class="menu-icon" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a>
+	<a class="hide-on-mobile" href="home.html">Home</a>
+	<a class="hide-on-mobile" href="resume.html">Resume</a>
+	<a class="hide-on-mobile" href="projectsgrid.html">Projects</a>
+	<a class="hide-on-mobile" href="contact.html">Contact</a>
+	</div>
+
+<!--
+	would it make more sense to use a png vs a svg? I'm confused where it is linking the icon from	
+-->
+	<div class="small-screen-navbar">
 	<a href="home.html">Home</a>
 	<a href="resume.html">Resume</a>
 	<a href="projectsgrid.html">Projects</a>
 	<a href="contact.html">Contact</a>
+	<a onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a>
 	</div>
+<!--
+	could also have the script link to a .js file, don't know how to make .js file
+-->
+	  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
 	
 	<div class="row">
 	<div class="image-container">
