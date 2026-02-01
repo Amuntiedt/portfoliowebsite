@@ -124,14 +124,14 @@ color: black;
     }
 }
 @media screen and (max-width: 700px) {
-.row{
+.contact-container {
 flex-direction: column;
 }
 }
 @media screen and (max-width: 400px) {
-.navbar a{
-float: none;
-width: 100%;
+.contact-container {
+flex-direction: column;
+width: auto;
 }
 }
 .footer {

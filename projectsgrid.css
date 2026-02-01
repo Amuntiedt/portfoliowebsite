@@ -50,6 +50,9 @@ align-items: center;
 align-content: center;
 gap: 1em;
 padding: 20px;
+/*
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+*/
 }
 .flip-card {
 background-color: transparent;
@@ -66,6 +69,9 @@ height: 100%;
 text-align: center;
 transition: transform 0.8s;
 transform-style: preserve-3d;
+}
+.flip-card-inner .front-link {
+display: none;
 }
 .flip-card:hover .flip-card-inner {
 transform: rotateY(-180deg);
@@ -130,7 +136,28 @@ box-sizing: border-box;
 .text-container {
     margin-bottom: 20px;
 }
-
-
+/*
+Attempt one, card doesn't flip, just has an image and a link to the project description further down the page, issue is that each image is its own class, and some of them aren't vertical
+*/
+@media (max-width: 480px) {
+/*
+Could this be in the main CSS so I don't have to set a bunch of break points? 
+*/
+.grid-container {
+grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.flip-card {
+width: auto;
+}
+.flip-card:hover .flip-card-inner {
+transform: none;
+}
+.image-container img change detection{
+display: none;
+}
+.flip-card-inner .front-link {
+display: block;
+padding: 5px;
+}
 .footer {
 }
