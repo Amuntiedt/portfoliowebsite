@@ -78,6 +78,7 @@ display: none;
   .small-screen-navbar{
     width: 100%;
   }
+  }
 * { /*why is this only an asterisk*/
 box-sizing: border-box;
 }
@@ -97,10 +98,14 @@ padding: 20px;
     max-width: 100%;
     height: auto;
     }
-.main{
+.biography-text{
 flex: 70%;
 background-color: #e6e6e6;
-padding: 20px;
+margin: 20px;
+}
+.biography-text p{
+font-size: 16px;
+margin:20px;
 }
 @media screen and (max-width: 700px) {
 .row{
@@ -111,7 +116,6 @@ flex-direction: column;
 .navbar a{
 float: none;
 width: 100%;
-}
 }
 .footer {
 padding: 20px;

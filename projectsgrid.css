@@ -97,11 +97,15 @@ color: white;
 transform: rotateY(180deg);
 }
 .flip-card-back p{
+font-size: 20px;
 text-align: center;
   margin-top: 70px;  
   max-width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
+}
+.flip-card-back a{
+color: #fff;
 }
 .image-container {
 padding: 20px;
@@ -113,14 +117,106 @@ padding: 20px;
     max-width: 100%;
     height: auto;
 }
-.main {
+.project-main {
 display: flex;
 flex-wrap: wrap;
 padding: 20px;
 }
+.loon-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.loon-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.loon-text-container p{
+font-size: 16px;
+}
+.mbc-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.mbc-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.mbc-text-container p{
+font-size: 16px;
+}
+.con-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.con-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.mbc-text-container p{
+font-size: 16px;
+}
+.waste-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.waste-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.waste-text-container p{
+font-size: 16px;
+}
+.LAfire-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.LAfire-text-container h2{
+text-align: left;
+font-size:28px;
+}
+.LAfire-text-container p{
+font-size: 16px;
+}
+.Mauifire-text-container {
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.Mauifire-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.Mauifire-text-container p{
+font-size: 16px;
+}
+.light-text-container{
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
+box-sizing: border-box;
+}
+.light-text-container h2{
+text-align: left;
+font-size: 28px;
+}
+.light-text-container p{
+font-size: 16px;
+}
 .text-container-header h2{
 	text-align: center;
 }
+/*
 .text-container {
   margin-left:30px;
   margin-right: 30px;
@@ -136,6 +232,7 @@ box-sizing: border-box;
 .text-container {
     margin-bottom: 20px;
 }
+*/
 /*
 Attempt one, card doesn't flip, just has an image and a link to the project description further down the page, issue is that each image is its own class, and some of them aren't vertical
 */
