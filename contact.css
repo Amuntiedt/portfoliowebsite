@@ -126,12 +126,18 @@ color: black;
 @media screen and (max-width: 700px) {
 .contact-container {
 flex-direction: column;
+width: auto;
 }
+.contact-inputs{
+width: 375px;
 }
 @media screen and (max-width: 400px) {
 .contact-container {
 flex-direction: column;
 width: auto;
+}
+.contact-inputs{
+width: 300px;
 }
 }
 .footer {
