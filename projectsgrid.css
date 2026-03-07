@@ -27,19 +27,56 @@ justify-content: center;
 background-color: #30363d;
 }
 .navbar a{
-float: left; /*make sure the links stay side-by-side */
-display: block; /* change the display to block, for responsive reasons */
+float: left;
+display: block; 
 color: white;
 text-align: center;
 padding: 14px 20px;
 text-decoration: none;
 }
 .navbar a.right{
-float: right; /*Right-aligned link, floats a link to the right*/
+float: right;
 }
 .navbar a:hover {
 background-color: #BAC8b1;
 color: black;
+}
+.menu-btn {
+display: none;
+}
+.menu-icon{
+background-color: #404e3b;
+display: none;
+padding: 20px 20px;
+cursor: pointer;
+}
+.menu-icon .nav-icon {
+display: inline-block;
+vertical-align: middle;
+background: #e6e6e6;
+height: 2px;
+width: 18px;
+display: block;
+position: relative;
+transition: background .2s ease-out;
+}
+.menu-icon .nav-icon::before,
+.menu-icon .nav-icon::after {
+background: #e6e6e6;
+content:"";
+height: 100%;
+width: 100%;
+position: absolute;
+left: 0;
+transition: background .2s ease-out;
+}
+.menu-icon .nav-icon::before{
+top: -5px;
+background: #e6e6e6;
+}
+.menu-icon .nav-icon::after{
+top: 5px;
+background: #e6e6e6;
 }
 .grid-container {
 display: grid;
@@ -122,117 +159,19 @@ display: flex;
 flex-wrap: wrap;
 padding: 20px;
 }
-.loon-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.loon-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.loon-text-container p{
-font-size: 16px;
-}
-.mbc-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.mbc-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.mbc-text-container p{
-font-size: 16px;
-}
-.con-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.con-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.mbc-text-container p{
-font-size: 16px;
-}
-.waste-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.waste-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.waste-text-container p{
-font-size: 16px;
-}
-.LAfire-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.LAfire-text-container h2{
-text-align: left;
-font-size:28px;
-}
-.LAfire-text-container p{
-font-size: 16px;
-}
-.Mauifire-text-container {
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.Mauifire-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.Mauifire-text-container p{
-font-size: 16px;
-}
-.light-text-container{
-margin-left: 30px;
-margin-right: 30px;
-max-width: 100%;
-box-sizing: border-box;
-}
-.light-text-container h2{
-text-align: left;
-font-size: 28px;
-}
-.light-text-container p{
-font-size: 16px;
-}
-.text-container-header h2{
-	text-align: center;
-}
-/*
 .text-container {
-  margin-left:30px;
-  margin-right: 30px;
-  max-width: 100%;
+margin-left: 30px;
+margin-right: 30px;
+max-width: 100%;
 box-sizing: border-box;
 }
-.text-container-2 {
-  margin-left:30px;
-  margin-right: 30px; 
-  max-width: 100%;
-    box-sizing: border-box;
+.text-container h2{
+text-align: left;
+font-size: 28px;
 }
-.text-container {
-    margin-bottom: 20px;
+.text-container p{
+font-size: 16px;
 }
-*/
 /*
 Attempt one, card doesn't flip, just has an image and a link to the project description further down the page, issue is that each image is its own class, and some of them aren't vertical
 */
@@ -255,6 +194,36 @@ display: none;
 .flip-card-inner .front-link {
 display: block;
 padding: 5px;
+}
+@media screen and (max-width: 600px) {
+
+.menu-icon {
+display: flex;
+justify-content: center;
+}
+.navbar{
+max-height: 0;
+overflow:hidden;
+flex-direction: column;
+transition: max-height 0.2s ease-out;
+}
+.menu-btn:checked ~ .navbar {
+max-height: 300px;
+}
+.menu-btn:checked + .menu-icon .nav-icon {
+background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+transform: rotate(45deg);
+top:0;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+transform: rotate(-45deg);
+top:0;
+}
+.image-container img{
+margin-left: 0px;
+}
 }
 .footer {
 }

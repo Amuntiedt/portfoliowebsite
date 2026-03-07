@@ -39,12 +39,15 @@ color: black;
 display: none;
 }
 .menu-icon{
+background-color: #404e3b;
 display: none;
 padding: 20px 20px;
 cursor: pointer;
 }
 .menu-icon .nav-icon {
-background: #333;
+display: inline-block;
+vertical-align: middle;
+background: #e6e6e6;
 height: 2px;
 width: 18px;
 display: block;
@@ -53,7 +56,7 @@ transition: background .2s ease-out;
 }
 .menu-icon .nav-icon::before,
 .menu-icon .nav-icon::after {
-background: #333;
+background: #e6e6e6;
 content:"";
 height: 100%;
 width: 100%;
@@ -63,23 +66,17 @@ transition: background .2s ease-out;
 }
 .menu-icon .nav-icon::before{
 top: -5px;
+background: #e6e6e6;
 }
 .menu-icon .nav-icon::after{
-top: 8px;
+top: 5px;
+background: #e6e6e6;
 }
-.hamburger .menu-btn{
-display: none;
-}
-.hamburger .menu-btn:checked ~ .navbar{
-max-height: 240px;
-}
-.hamburger .menu-btn:checked ~ .menu-icon .nav
-* { /*why is this only an asterisk*/
+* { 
 box-sizing: border-box;
 }
 .row {
 display: flex;
-flex-wrap: wrap;
 }
 .image-container {
 padding: 20px;
@@ -102,21 +99,18 @@ margin: 20px;
 font-size: 16px;
 margin:20px;
 }
-.hamburger {
-display: none;
-border: none;
-background-color: transparent;
-}
 
 @media screen and (max-width: 600px) {
+
 .menu-icon {
-display: block;
+display: flex;
+justify-content: center;
 }
 .navbar{
 max-height: 0;
 overflow:hidden;
 flex-direction: column;
-transition: max-height 0.3s ease-out;
+transition: max-height 0.2s ease-out;
 }
 .menu-btn:checked ~ .navbar {
 max-height: 300px;
@@ -124,21 +118,26 @@ max-height: 300px;
 .menu-btn:checked + .menu-icon .nav-icon {
 background: transparent;
 }
-.menu-btn:checked + .menu-icon .nav-icon::before {
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
 transform: rotate(45deg);
-top: 0;
+top:0;
 }
-.menu-btn:checked + .menu-icon .nav-icon:: after {
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
 transform: rotate(-45deg);
-top: 0;
+top:0;
 }
 .image-container img{
 margin-left: 0px;
 }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 .row{
 flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.image-container {
+margin-top: 20px;
 }
 }
 @media screen and (max-width: 400px) {
