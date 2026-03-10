@@ -157,7 +157,6 @@ padding: 20px;
 .project-main {
 display: flex;
 flex-wrap: wrap;
-padding: 20px;
 }
 .text-container {
 margin-left: 30px;
@@ -168,35 +167,24 @@ box-sizing: border-box;
 .text-container h2{
 text-align: left;
 font-size: 28px;
+margin-left: 30px
 }
 .text-container p{
 font-size: 16px;
 }
-/*
-Attempt one, card doesn't flip, just has an image and a link to the project description further down the page, issue is that each image is its own class, and some of them aren't vertical
-*/
-@media (max-width: 480px) {
-/*
-Could this be in the main CSS so I don't have to set a bunch of break points? 
-*/
-.grid-container {
-grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-}
-.flip-card {
-width: auto;
-}
-.flip-card:hover .flip-card-inner {
-transform: none;
-}
-.image-container img change detection{
+.small-screen-card {
 display: none;
 }
-.flip-card-inner .front-link {
-display: block;
-padding: 5px;
+.small-screen-text {
+display: none;
 }
 @media screen and (max-width: 600px) {
-
+.flip-card{
+display: none;
+}
+.text-container{
+display: none;
+}
 .menu-icon {
 display: flex;
 justify-content: center;
@@ -224,6 +212,22 @@ top:0;
 .image-container img{
 margin-left: 0px;
 }
+.small-screen-card {
+display: block;
+background-color: #6c8480;
+color: black;
+border: 1px solid #404e3b;
+margin: 10px;
+}
+.small-screen-card h1 {
+display: block;
+color: white;
+text-align: center;
+}
+.small-screen-text {
+display: block;
+font-size: 16px;
+margin: 20px;
 }
 .footer {
 }

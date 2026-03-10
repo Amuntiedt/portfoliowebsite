@@ -157,6 +157,11 @@
 
     </div>
     
+    
+    
+    
+    
+    
     <div id="main" class="project-main">
 	<div class="text-container"><h2>
       Predicting Future Conflicts between Loon Habitats and Human Development in New Hampshire using NASA Earth Observations</h2>
@@ -194,24 +199,90 @@
   <div id="LAfire" class="text-container"><h2>
     LA wildfires</h2>
     <div class="text-container">
-    <p>More stuff about the LA wildfire map. I did it on GEE. Same as Hawaii but this time I considered wind patterns</p>
+    <p>More stuff about the LA wildfire map. I did it on GEE. Same as Hawaii but this time I considered wind patterns.  made a series of maps of the LA Wildfires looking at Normalized Difference Vegetation Index (NDVI) conditions leading up to the fire as well as total area burnt. I also analyzed past climate trends as well as the impact of the Santa Ana winds in the area. </p>
     </div>
   </div>
 
   <div id="Mauifire" class="text-container"><h2>
     Maui wildfires</h2>
     <div class="text-container">
-    <p>More stuff about the Maui wildfire map. I did it on GEE. Considered </p>
+    <p>More stuff about the Maui wildfire map. I did it on GEE. I conducted a series of analyses on the 2023 Maui Wildfires using a normalized burn ratio (NBR), normalized difference moisture index (MDMI), and a normalized difference vegetation index (NDVI) looking at both before and after the wildfire. </p>
     </div>
   </div>
   </div>
    <div id="light" class="text-container"><h2>
     Light Pollution Analysis for Astrophotography</h2>
     <div class="text-container">
-    <p>Using Google Earth Engine, I created a map of the best locations in desert and xeric shrubland for astrophotography in the southwest of the Untied States.  </p>
+    <p>Using Google Earth Engine, I created a map of the best locations in desert and xeric shrubland for astrophotography in the southwest of the Untied States. Using Google Earth Engine, I created a map of the best locations in desert and xeric shrubland for astrophotography in the southwest of the Untied States. </p>
   </div>
   </div>
   </div>
+  
+  
+  
+  
+  
+  
+  
+	<div class="small-screen-card">
+	<h1>Predicting Future Loon Habitat in New Hampshire
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/extreme_temp_loon_nest.png" alt="A map of New Hampshire showing a range to extreme temperatures with eight dots representing locations of loon nests" width="300" height="400">
+	</div>
+	<div class="small-screen-text">
+   <p>I worked with a team of researchers to examine how potential changes in land surface temperature, water quality, and land development could affect Common loon breeding range. Loon nest data was provided by the Loon Preservation Committee while the remaining data was acquired using Google Earth Engine (GEE). MODIS and Landsat imagery was used to provide two decades of land surface temperature. Landsat 8 imagery was used to analyze water clarity. NLCD land classifications from 2001 and 2019 were used to analyze land development. 
+    <br>
+    <br>
+    To calculate LST, the MODIS and Landsat imagery were compressed into averages and ran through a script. The LST calculations were then exported into ESRI ArcGIS Pro to conduct change difference analysis. Next, we found the average LST for two groups of cities: largest total population and largest population growth. Finally we identified the most recent nest occurrences and compared it to areas of highest temperature increase. Imagery from Landsat 8 was processed in ACOLITE to identify turbidity estimates. Since loons prefer clear water, turbidity was used as a proxy for water clarity. The ACOLITE estimates were visualized using SeaDAS. The NLCD data was clipped to a 500 foot buffer around eight case study lakes. Then existing development in 2001 was calculated and changes in the 2019 pixel value was used to identify increased development. From there land available for development was identified using the remaining qualifying land classifications in the 2019 layer. This allowed the team to identify areas that were most likely to be developed in the future. 
+    am and I created a forest cover change detection map and performed deforestation time series analysis using Landsat satellites 5, 7, 8, and 9 in ArcGIS Pro. We developed a forest/non forest classification for the entire Mesoamerican Biological Corridor using JavaScript Google Earth Engine.</p>
+    </div> 
+  
+	<div class="small-screen-card">
+	<h1>Assessing Forest Cover Change in Mesoamerica
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/boquete_presentation.jpg" alt="A woman smiling in front of a screen that says Waste management habits of households in Boquete and opinions of zero waste law" width="300" height="400">
+	</div>
+	<div class="small-screen-text">
+    <p>I worked within a team of four researchers assessing forest cover change in the past thirty years using Landsat Satellite to support international policy and decision makers. I coordinated between NASA DEVELOP, NASA SERVIR, and international partners by accounting for availability, language differences, and expectations of the project. We presented deliverables to partners and non-geospatial professionals to help inform policy and decision makers.
+
+      My team and I created a forest cover change detection map and performed deforestation time series analysis using Landsat satellites 5, 7, 8, and 9 in ArcGIS Pro. We developed a forest/non forest classification for the entire Mesoamerican Biological Corridor using JavaScript Google Earth Engine.</p>
+    </div>  
+    
+    <div class="small-screen-card">
+	<h1>Parcel Connectivity model
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/NBRPost.png" alt="Normalized Burn Ratio analysis of Lahaina Hawaii" width="300" height="400">
+	</div>
+	<div class="small-screen-text">
+    <p>I refined a previous connectivity model of spatial data to identify potential parcels with high connectivity value. The previous model was much more limited in scope, so I expanded it to meet the teams desired qualifications. I used the least cost model to develop this connectivity model of spaital data. </p>
+    </div>  
+    
+    <div class="small-screen-card">
+	<h1>LA Wildfire Analysis
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/NBRPost.png" alt="Normalized Burn Ratio analysis of Lahaina Hawaii" width="300" height="400">
+	</div>
+	<div class="small-screen-text">
+    <p>More stuff about the LA wildfire map. I did it on GEE. Same as Hawaii but this time I considered wind patterns.  made a series of maps of the LA Wildfires looking at Normalized Difference Vegetation Index (NDVI) conditions leading up to the fire as well as total area burnt. I also analyzed past climate trends as well as the impact of the Santa Ana winds in the area. </p>
+    </div>  
+  
+  <div class="small-screen-card">
+	<h1>Maui Wildfire
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/NBRPost.png" alt="Normalized Burn Ratio analysis of Lahaina Hawaii" width="300" height="400">
+	</div>
+	<div class="small-screen-text">
+    <p>More stuff about the Maui wildfire map. I did it on GEE. I conducted a series of analyses on the 2023 Maui Wildfires using a normalized burn ratio (NBR), normalized difference moisture index (MDMI), and a normalized difference vegetation index (NDVI) looking at both before and after the wildfire. </p>
+    </div>
+   
+   <div class="small-screen-card">
+	<h1>Light Pollution Analysis for Astrophotography
+		</h1>
+	<img src="/home/amelia/Desktop/website/assets/images/ChangeDetection.png" alt="A change detection analysis of forest and non forest in Mesoamerica" width="500" height="400">
+	</div>
+	<div class="small-screen-text">
+    <p>More stuff about the Maui wildfire map. I did it on GEE. I conducted a series of analyses on the 2023 Maui Wildfires using a normalized burn ratio (NBR), normalized difference moisture index (MDMI), and a normalized difference vegetation index (NDVI) looking at both before and after the wildfire. </p>
+    </div>
 	
 	
 	<div class="footer">
