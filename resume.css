@@ -85,6 +85,8 @@ box-sizing: border-box;
 .main{
 background-color: #e6e6e6;
 padding: 20px;
+width: 960px;
+margin: auto;
 }
 
 .text-container-education h2{
@@ -197,7 +199,7 @@ padding: 20px;
 */
     grid-gap: 15px;
     padding: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .text-container-skills h2{
 	font-size: 28px;

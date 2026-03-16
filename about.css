@@ -24,7 +24,7 @@ font-size: 40px;
 overflow: hidden;
 display: flex;
 justify-content: center;
-background-color: #30363d;
+background-color: #404e3b;
 }
 .navbar a{
 float: left; /*make sure the links stay side-by-side */
