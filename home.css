@@ -23,7 +23,7 @@ font-size: 40px;
 .navbar {
 display: flex;
 justify-content: center;
-background-color: #404e3b;
+background-color: #30363d;
 }
 .navbar a{
 color: white;
