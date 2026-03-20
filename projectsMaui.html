@@ -1,35 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<title>Maui Wildfire Analysis - My Projects - Amelia</title>
-<link rel="stylesheet" href="projectsgrid.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Maui Wildfire Analysis - My Projects - Amelia</title>
+    <link rel="stylesheet" href="projectsgrid.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="banner-container">
+        <h1>Maui Wildfire Analysis</h1>
+      </div>
+    </div>
 
-	</head>
-	<body>
-	
-	<div class="header">
-		<div class="banner-container">
-		<h1>My Projects</h1>
-		</div>
-		</div>
-	
-	<input class="menu-btn" type="checkbox" id="menu-btn"/>
-	<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-	<nav class="navbar">
-	<a href="home.html">About</a>
-	<a href="resume.html">Resume</a>
-	<a href="projectsgrid.html">Projects</a>
-	<a href="contact.html">Contact</a>
-	</nav>
-	
-	<div class="project-main">
-	<div class="text-container"><h2>
-      Maui Wildfire Analysis</h2>
-    <div class="text-container">
-    <p>More stuff about the Maui Wildfire map. I did it on GEE. I conducted a series of analyses on the 2023 Maui Wildfire using a Normalized Burn Ratio (NBR), Normalized Difference Mouisture Index (MDMI), and a Normalized Difference Vegetation Index (NDVI) looking at both before and after the wildfire.</p>
-		</div>
-		</div>
-		</div>
-		
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="nav-icon"></span
+    ></label>
+    <nav class="navbar">
+      <a href="home.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projectsgrid.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="project-main">
+      <div class="text-container">
+        <h2>Maui Wildfire Analysis</h2>
+        <div class="text-container">
+        
+          <p>Using Google Earth Engine (GEE), I conducted a study of the 2023 Maui Wildfire, focusing specifically on Lahaina. This study used three different analyses to assess conditions: Normalized Burn Ratio (NBR), Normalized Difference Moisture Index (NDMI), and Normalized Difference Vegetation Index (NDVI). NBR is used to identify burned areas on the landscape. NDMI is used to calculate water content in vegetation. Both NBR and NDMI are calculated using the formula, except NBR uses SWIR1 and NDMI uses SWIR2. Generally, NDMI is used to assess for the potential of an area to burn, while NBR is used to identify and classify the extent and severity of burned areas. NDVI shows the health and resilience of vegetation, which can help indicate how dry a particular area was. This study allows users to see the changes in conditions before and after the 2023 wildfires by toggling different layers on and off.<p>
+        </div>
+        <a href="https://auntiedt.users.earthengine.app/view/maui-wildfire-analysis">Maui Wildfire Google Earth Engine App</a>
+      </div>
+    </div>
+  </body>
+</html>
