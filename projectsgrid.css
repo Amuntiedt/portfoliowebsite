@@ -193,6 +193,7 @@ display: none;
 .menu-icon {
 display: flex;
 justify-content: center;
+background-color: #30363d;
 }
 .navbar{
 max-height: 0;
@@ -213,6 +214,12 @@ top:0;
 .menu-btn:checked ~ .menu-icon .nav-icon:after {
 transform: rotate(-45deg);
 top:0;
+}
+.project-main {
+display: flex;
+flex-wrap: wrap;
+width: auto;
+margin: auto;
 }
 .small-screen-card {
 display: block;
