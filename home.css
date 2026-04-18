@@ -76,24 +76,20 @@ background: #e6e6e6;
 box-sizing: border-box;
 }
 .row {
-display: flex;
 width: 1260px;
 margin: auto;
 }
 .image-container {
-padding: 30px;
+padding: 30px 60px;
+float: left;
 }
 .image-container img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20%;
-    float:left;
-    margin-left: 30px;
-    margin-right: 20px;
     max-width: 100%;
     height: auto;
     }
 .biography-text{
-flex: 70%;
 background-color: #e6e6e6;
 margin: 20px;
 }
@@ -103,8 +99,6 @@ margin-right: 50px;
 }
 @media screen and (max-width: 1260px) {
 .row {
-display: flex;
-flex-direction: column;
 justify-content: center;
 width: auto;
 margin: auto;
@@ -116,17 +110,19 @@ margin-left: 0px;
 margin: 20px;
 }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 .row{
-display: flex;
 width: auto;
 margin: auto;
-flex-direction: column;
 justify-content: center;
 align-items: center;
 }
 .image-container {
-margin-top: 20px;
+	float: none;
+	text-align: center;
+}
+.biography-text{
+margin: 20px;
 }
 }
 @media screen and (max-width: 600px) {
@@ -155,9 +151,14 @@ top:0;
 transform: rotate(-45deg);
 top:0;
 }
-.image-container img{
-margin-left: 0px;
-}
+.image-container img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+    }
 }
 @media screen and (max-width: 400px) {
 .navbar a{
@@ -166,6 +167,7 @@ width: 100%;
 }
 }
 .footer {
+clear: both;
 padding: 20px;
 text-align: center;
 background: #ddd;
