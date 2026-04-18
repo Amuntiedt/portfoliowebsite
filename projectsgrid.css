@@ -80,9 +80,9 @@ background: #e6e6e6;
 }
 .grid-container {
 display: grid;
-width: 1500px;
+max-width: 1500px;
 margin: auto;
-justify-content: center;
+justify-items: center;
 align-items: center;
 align-content: center;
 gap: 1em;
@@ -246,4 +246,7 @@ margin: 20px;
 }
 }
 .footer {
+padding: 20px;
+background: #ddd;
+text-align: center;
 }

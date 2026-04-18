@@ -168,7 +168,7 @@ width: auto;
 .contact-inputs{
 width: 375px;
 }
-
+}
 @media screen and (max-width: 600px) {
 
 .menu-icon {
@@ -199,6 +199,7 @@ top:0;
 .image-container img{
 margin-left: 0px;
 }
+}
 @media screen and (max-width: 400px) {
 .contact-container {
 flex-direction: column;
@@ -212,4 +213,6 @@ width: 300px;
 padding: 20px;
 text-align: center;
 background: #ddd;
+}
+
 
