@@ -76,12 +76,16 @@ background: #e6e6e6;
 box-sizing: border-box;
 }
 .row {
-width: 1260px;
 margin: auto;
+display: flex;
+max-width: 1260px;
+justify-content: center;
 }
 .image-container {
 padding: 30px 60px;
-float: left;
+position: sticky;
+top: 200px;
+height: 100%;
 }
 .image-container img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -91,7 +95,9 @@ float: left;
     }
 .biography-text{
 background-color: #e6e6e6;
-margin: 20px;
+width: 50%;
+overflow: auto;
+height: 100%;
 }
 .biography-text p{
 font-size: 16px;
@@ -102,29 +108,51 @@ margin-right: 50px;
 justify-content: center;
 width: auto;
 margin: auto;
+display: flex;
+max-width: 1000px;
 }
 .image-container{
-margin-left: 0px;
+padding: 30px 60px;
+width: 50%;
+position: sticky;
+top: 100px;
+height: 100%;
 }
 .biography-text{
-margin: 20px;
+background-color: #e6e6e6;
+width: 50%;
+overflow: auto;
+height: 100%;
+}
+.biography-text p{
+font-size: 16px;
 }
 }
-@media screen and (max-width: 1000px) {
-.row{
+@media screen and (max-width: 800px) {
+.row {
+justify-content: center;
 width: auto;
 margin: auto;
-justify-content: center;
 align-items: center;
-}
-.image-container {
-	float: none;
-	text-align: center;
+flex-direction: column;
 }
 .biography-text{
-margin: 20px;
+margin: 20px 30px;
+width: auto;
+}
+.image-container {
+text-align: center;
+width: auto;
+position: static;
 }
 }
+.image-container img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20%;
+    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+    }
 @media screen and (max-width: 600px) {
 
 .menu-icon {
