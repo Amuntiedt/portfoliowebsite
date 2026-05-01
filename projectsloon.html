@@ -27,8 +27,6 @@
     <div id="main" class="project-main">
 	<div class="text-container"><h2>
       Predicting Future Conflicts between Loon Habitats and Human Development in New Hampshire using NASA Earth Observations</h2>
-    </div>
-    <div class="text-container">
     <p>I worked with a team of researchers to examine how potential changes in land surface temperature, water quality, and land development could affect Common loon breeding range. We partnered with the Loon Preservation Committee, an organization that works to ensure future habitat for healthy loon populations in New Hampshire. Loon nest data was provided by the Loon Preservation Committee while the remaining data was acquired using Google Earth Engine (GEE). MODIS and Landsat imagery was used to provide two decades of land surface temperature (LST) data and Landsat 8 imagery was used to analyze water clarity in 2013 and 2022. NLCD land classifications from 2001 and 2019 were used to analyze land development.</p>
     <p>To calculate LST, the MODIS and Landsat imagery were compressed into averages and ran through a script. The LST calculations were then exported into ESRI ArcGIS Pro to conduct change difference analysis. Next, we found the average LST for two groups of cities: largest total population and largest population growth. Finally we identified the most recent nest occurrences and compared it to areas of highest temperature increase. Imagery from Landsat 8 was processed in ACOLITE to identify turbidity estimates. Since loons prefer clear water, turbidity was used as a proxy for water clarity. The ACOLITE estimates were visualized using SeaDAS. The NLCD data was clipped to a 500 foot buffer around eight case study lakes. Then existing development in 2001 was calculated and changes in the 2019 pixel values were used to identify increased development. From there land available for development was identified using the remaining qualifying land classifications in the 2019 layer. This allowed the team to identify areas that were most likely to be developed in the future.
     </p>
@@ -44,3 +42,9 @@
         </figure>
     <a href="https://ntrs.nasa.gov/citations/20230006399">NASA DEVELOP Technical Paper</a>
     </div>
+    </div>
+	
+	<div class="footer">
+	<h2>© 2026 Amelia Untiedt. All rights reserved.</h2>
+	</div>
+</body>
